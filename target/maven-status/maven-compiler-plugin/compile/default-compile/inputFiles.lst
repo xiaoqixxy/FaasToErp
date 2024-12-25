@@ -1,0 +1,17 @@
+/code/src/main/java/com/alibaba/work/faas/util/DingOpenApiUtil.java
+/code/src/main/java/com/alibaba/work/faas/config/KingdeeConfig.java
+/code/src/main/java/com/alibaba/work/faas/service/impl/KingdeeServiceImpl.java
+/code/src/main/java/com/alibaba/work/faas/util/YidaConnectorUtil.java
+/code/src/main/java/com/alibaba/work/faas/util/KingdeeUtil.java
+/code/src/main/java/com/alibaba/work/faas/util/CommonUtil.java
+/code/src/main/java/com/alibaba/work/faas/MainApplication.java
+/code/src/main/java/com/alibaba/work/faas/common/FaasResponse.java
+/code/src/main/java/com/alibaba/work/faas/common/FaasInputs.java
+/code/src/main/java/com/alibaba/work/faas/service/impl/YidaServiceImpl.java
+/code/src/main/java/com/alibaba/work/faas/constant/DingConstant.java
+/code/src/main/java/com/alibaba/work/faas/config/DingConfig.java
+/code/src/main/java/com/alibaba/work/faas/common/AbstractEntry.java
+/code/src/main/java/com/alibaba/work/faas/FaasEntry.java
+/code/src/main/java/com/alibaba/work/faas/service/YidaService.java
+/code/src/main/java/com/alibaba/work/faas/util/HttpUtil.java
+/code/src/main/java/com/alibaba/work/faas/service/KingdeeService.java

@@ -1,0 +1,59 @@
+server:
+  port: 9000
+
+#钉钉相关配置
+dingtalk:
+  appKey: dingqiuhouiiai46ouze
+  appSecret: MinCH4Avx0a7PZkFSsokj7uwYcLSMvMegzIAiUqGjBx-2S9I13OnBEh6OPYhbSvE
+  #宜搭相关配置
+  yida:
+    appType: APP_DV5SA06CU7YR3RDES9DR
+    systemToken: I5D66NB1I6TQXFE264MD45CMFGI33N8PQG64M9F
+    userId: 282334124435351623
+    language: zh_CN
+
+#金蝶相关配置
+kingdee:
+  kingdee:
+    - name: 江西怡杉环保股份有限公司
+      url: http://171.34.196.54:18900/K3CLOUD
+      accountId: 66b7101a31d36c
+      username: admin
+      password: Chen112233
+      appId: 297689_14aqW7hF3Im5Rf1K62SNU7xr0sX7wPsI
+      appKey: 240b2d1b8fb14482a5e31eae87e676e8
+      isDefault: true
+    - name: 江西怡杉科技有限公司
+      url: http://171.34.196.54:18900/K3CLOUD
+      accountId: 66b710f231d384
+      username: admin
+      password: Chen112233
+      appId: 297690_449u1ZktzPmfx9TISYxPT+0NzJw85pPs
+      appKey: c97bf4bd537148c3b1a724a529b23559
+      isDefault: false
+    - name: 上海怡杉环保科技有限公司
+      url: http://171.34.196.54:18900/K3CLOUD
+      accountId: 66b7118531d394
+      username: admin
+      password: Chen112233
+      appId: 297694_5f1J3zFoQogbX81ES+0O1b+HRj4aRoMO
+      appKey: d67abec68ba24872b42fb832e907a6b4
+      isDefault: false
+    - name: 江西三思检测技术有限公司
+      url: http://171.34.196.54:18900/K3CLOUD
+      accountId: 66b7106431d374
+      username: admin
+      password: Chen112233
+      appId: 297687_X1fr3yvsSpma5/zvx/2t6dTrTr1d5rot
+      appKey: 2b1166e68d4e4b4e87d7a6a8c77bee32
+      isDefault: false
+    - name: 江西智汇环境技术有限公司
+      url: http://171.34.196.54:18900/K3CLOUD
+      accountId: 66b710b431d37c
+      username: admin
+      password: Chen112233
+      appId: 297693_WY6N7zDKQJqfQ8xtW/0DVY0GUixZSOlF
+      appKey: 9c607925e0c24969b39f4505b17fcb1e
+      isDefault: false
+
+

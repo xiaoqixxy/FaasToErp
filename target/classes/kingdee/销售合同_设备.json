@@ -1,0 +1,53 @@
+{
+  "YiDa": {
+    "FormUuid" : "FORM-AEAE14384DB746D5BE267C596A570A56C6GN",
+    "AccountName": "associationFormField_m4c7hlu1",
+    "ERP_ID": "textField_m4cbq726",
+    "ERP_NUMBER": "textField_m4c7t9mm",
+    "Execute": ["unAudit","save","submit","audit"],
+    "WriteBack": true
+  },
+
+  "Table": "CRM_Contract",
+  "Model": {
+    "FId": "textField_m4cbq726",
+    "FName": "textField_m53btoxo",
+    "FBDCUSTID": {
+      "FNUMBER": "textField_m4rrxq3s"
+    },
+    "FSalerId": {
+      "FNumber": "employeeField_m4i6bsh1"
+    },
+    "FHAVEENTRY": "true",
+    "FContractType": "A0001",
+    "F_XMHD_Base_pzg": {
+      "FNUMBER": "textField_m52fzdqj"
+    },
+    "F_XMHD_Assistant_re5": {
+      "FNumber": "A0001"
+    },
+    "F_XMHD_Text_re5": "",
+    "F_XMHD_Text_ca9": "textField_m4i6bshb",
+    "F_XMHD_Text_uky": "textField_m4i6bshc",
+    "FCRMContractEntry": [
+      {
+        "FMaterialId": {
+          "FNumber": "textField_m3xt33re"
+        },
+        "FQty": "numberField_m3xt33rk",
+        "FTaxPrice": "numberField_m3xt33rj"
+      }
+    ],
+    "FContractPlan": [
+      {
+        "FNeedRecAdvance": "false",
+        "FRecAdvanceRate": "numberField_m39gylti",
+        "FMustDate": "dateField_m39gyltf",
+        "FReMark": "备注-todo",
+        "F_XMHD_Base_qtr": {
+          "FNUMBER": "textField_m4i6bsh0"
+        }
+      }
+    ]
+  }
+}

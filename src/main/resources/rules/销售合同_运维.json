@@ -1,0 +1,49 @@
+{
+  "Table": "CRM_Contract",
+  "Model": {
+    "FName": "合同名称及标的",
+    "FBDCUSTID": {
+      "FNUMBER": "textField_m4rrxq3s"
+    },
+    "FSaleDeptId": {
+      "FNumber": "$获取ERP部门编码$(employeeField_m4i6bsh1)"
+    },
+    "FSalerId": {
+      "FNumber": "$获取ERP用户编码$(employeeField_m4i6bsh1)"
+    },
+    "FHAVEENTRY": "true",
+    "FContractType": "A0001",
+    "F_XMHD_Base_pzg": {
+      "FNUMBER": "textField_m52fzdqj"
+    },
+    "F_XMHD_Assistant_re5": {
+      "FNumber": "A0001"
+    },
+    "F_XMHD_Text_re5": "收款条件-todo",
+    "F_XMHD_Text_ca9": "textField_m4i6bshb",
+    "F_XMHD_Text_uky": "textField_m4i6bshc",
+    "FCRMContractFIN": {
+      "FCONTRACTAMOUNT": 2000
+    },
+    "FCRMContractEntry": [
+      {
+        "FMaterialId": {
+          "FNumber": "textField_m3xt33re"
+        },
+        "FQty": "numberField_m3xt33rk",
+        "FTaxPrice": "numberField_m3xt33rj"
+      }
+    ],
+    "FContractPlan": [
+      {
+        "FNeedRecAdvance": "false",
+        "FRecAdvanceRate": "numberField_m39gylti",
+        "FMustDate": "dateField_m39gyltf",
+        "FReMark": "备注-todo",
+        "F_XMHD_Base_qtr": {
+          "FNUMBER": "textField_m4i6bsh0"
+        }
+      }
+    ]
+  }
+}
