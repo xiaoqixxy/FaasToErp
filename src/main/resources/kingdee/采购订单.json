@@ -5,28 +5,59 @@
     "ERP_ID": "textField_m4uqpjvz",
     "ERP_NUMBER": "textField_m4uqpjvy",
     "Execute": ["unAudit","save","submit","audit"],
-    "WriteBack": true
+    "WriteBack": true,
+    "Filter": [
+      {
+        "filed": "PUR_PurchaseOrder",
+        "vale": "直运采购",
+        "judgment": "="
+      },
+      {
+        "filed": "PUR_PurchaseOrder",
+        "vale": "直运采购",
+        "judgment": "="
+      }
+    ]
   },
 
   "Table": "PUR_PurchaseOrder",
 
+
   "Model": {
     "FID": "textField_m4uqpjvz",
+
+    "FBillTypeID": {
+      "FNUMBER": "selectField_lviwga1b"
+    },
+
+    "FDate": "dateField_lviwga1i",
+
     "FSupplierId": {
       "FNumber": "textField_m4unqud1"
     },
+
+    "FPurchaseDeptId": {
+      "FNumber": "09"
+    },
+
     "F_XMHD_Text_h1g": "textField_lvkk624j",
+
     "FPOOrderEntry": [
       {
         "FMaterialId": {
           "FNumber": "textField_m3e29avf"
         },
+
         "FQty": "numberField_m3e29avj",
+
         "FDeliveryDate": "dateField_lviwga1j",
+
         "FTaxPrice": "numberField_m3e29avk",
+
         "F_XMHD_Base_yrr": {
-          "FNUMBER": ""
+          "FNUMBER": "textField_m3co73tk"
         }
+
       }
     ]
   }

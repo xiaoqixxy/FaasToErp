@@ -173,7 +173,7 @@ public class KingdeeUtil {
      * @param regex
      * @return
      */
-    private Object analysisData(Map<String, ?> formData, Object regex, K3CloudApi api) {
+    public Object analysisData(Map<String, ?> formData, Object regex, K3CloudApi api) {
         if (regex instanceof Number || regex instanceof Boolean) {
             return regex;
         }
@@ -216,7 +216,11 @@ public class KingdeeUtil {
         }
 
         if (regex.startsWith("dateField")) {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+            // Use 24-hour format ("HH" instead of "hh") for proper time representation
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+            // Set a specific timezone if needed
+            sdf.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai")); // Or any time zone you prefer
 
             for (int i = 0; i < valuesByKey.size(); i++) {
                 Object value = valuesByKey.get(i);
@@ -229,8 +233,8 @@ public class KingdeeUtil {
                     }
                 }
             }
-
         }
+
     }
 
     private String applyTransformation(String value, String after, K3CloudApi api) {

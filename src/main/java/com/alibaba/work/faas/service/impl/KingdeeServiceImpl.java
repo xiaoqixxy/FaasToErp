@@ -551,6 +551,25 @@ public class KingdeeServiceImpl implements KingdeeService {
                 log.info("===========================================");
                 log.info("正在处理同步金蝶系统解析规则: {}",regexObj);
                 JSONArray Execute = regexObj.getJSONObject("YiDa").getJSONArray("Execute");
+                JSONArray filterArray = regexObj.getJSONObject("YiDa").getJSONArray("Filter");
+                log.info("开始执行条件过滤 {}",filterArray);
+                if (filterArray != null && !filterArray.isEmpty()) {
+                    boolean filterFlag = false;
+                    for (int i = 0; i < filterArray.size(); i++) {
+                        JSONObject filter = filterArray.getJSONObject(i);
+                        Object key = kingdeeUtil.analysisData(yidaFormData, filter.get("key"), null);
+                        if ("=".equals(filter.getString("judgment"))) {
+                            if (!filter.getString("vale").equals(key)) {
+                                log.info("执行条件过滤未通过 {},需求值 {},表单值 {}",filter ,filter.getString("vale"),key);
+                                filterFlag =  true;
+                            }
+                            log.info("执行条件过滤通过 {}",filter);
+                        }
+                    }
+                    if (filterFlag) {
+                        continue;
+                    }
+                }
                 if (Execute.isEmpty()) {
                     log.info("无需要执行的方法,跳过该条解析: {}",regexObj);
                 } else {
