@@ -1,0 +1,25 @@
+[
+  {
+    "FReMark": "备注-todo",
+    "F_XMHD_Base_qtr": {
+      "FNUMBER": [
+        "A0001"
+      ]
+    },
+    "FMustDate": 1735056000000,
+    "FRecAdvanceRate": 70,
+    "FNeedRecAdvance": "false"
+  },
+  {
+    "FReMark": "备注-todo",
+    "F_XMHD_Base_qtr": {
+      "FNUMBER": [
+        "A0002"
+      ]
+    },
+    "FMustDate": 1735056000001,
+    "FRecAdvanceRate": 70,
+    "FNeedRecAdvance": "false"
+  },
+  ...
+]

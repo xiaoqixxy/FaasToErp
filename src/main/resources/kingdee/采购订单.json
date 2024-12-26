@@ -1,0 +1,60 @@
+{
+  "YiDa": {
+    "FormUuid" : "FORM-652F3C277F0F44A8BF769F48297B1594W5WE",
+    "AccountName": "associationFormField_m4c7hlu1",
+    "ERP_ID": "textField_m4uqpjvz",
+    "ERP_NUMBER": "textField_m4uqpjvy",
+    "Execute": ["unAudit","save","submit","audit"],
+    "WriteBack": true,
+    "Filter": [
+      {
+        "filed": "selectField_lviwga1b",
+        "vale": "材料采购",
+        "judgment": "="
+      },
+      {
+        "filed": "textField_m4l137rm",
+        "vale": "江西怡杉环保股份有限公司",
+        "judgment": "="
+      }
+    ]
+  },
+
+  "Table": "PUR_PurchaseOrder",
+
+
+  "Model": {
+    "FID": "textField_m4uqpjvz",
+
+    "FDate": "dateField_lviwga1i",
+
+    "FSupplierId": {
+      "FNumber": "textField_m4unqud1"
+    },
+
+    "FPurchaseDeptId": {
+      "FNumber": "09"
+    },
+
+    "F_XMHD_Text_h1g": "textField_lvkk624j",
+
+    "FPOOrderEntry": [
+      {
+        "FMaterialId": {
+          "FNumber": "textField_m3e29avf"
+        },
+
+        "FQty": "numberField_m3e29avj",
+
+        "FDeliveryDate": "dateField_lviwga1j",
+
+        "FTaxPrice": "numberField_m3e29avk",
+
+        "F_XMHD_Base_yrr": {
+          "FNUMBER": "textField_m3co73tk"
+        }
+
+      }
+    ]
+  }
+}
