@@ -1,0 +1,37 @@
+{
+  "YiDa": {
+    "FormUuid" : "FORM-776296C2CDD341EDBD7E39B42149A6161XZR",
+    "AccountName": "associationFormField_m4c7hlu1",
+    "ERP_ID": "textField_m54sc2kr",
+    "ERP_NUMBER": "textField_m54wd5y7",
+    "Execute": ["unAudit","save","submit","audit"],
+    "WriteBack": true
+  },
+
+  "Table": "AR_RECEIVEBILL",
+
+
+  "Model": {
+    "FID": "textField_m54sc2kr",
+    "FDATE": "dateField_m39tdac8",
+    "FCONTACTUNIT": {
+      "FNumber": "textField_m54sc2kt"
+    },
+
+    "FPAYUNIT": {
+      "FNumber": "textField_m54sc2kt"
+    },
+    "FRECEIVEBILLENTRY": [
+      {
+        "FSETTLETYPEID": {
+          "FNumber": "textField_m54nihur"
+        },
+        "FRECTOTALAMOUNTFOR": "numberField_m39tdabv",
+        "FRECAMOUNTFOR_E": "numberField_m39tdabv",
+        "FACCOUNTID": {
+          "FNumber": "textField_m54nihus"
+        }
+      }
+    ]
+  }
+}
